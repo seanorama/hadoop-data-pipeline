@@ -16,7 +16,7 @@
     <order>FIFO</order>
     <frequency>minutes(5)</frequency>
 
-    <timezone>GMT+00:00</timezone>
+    <timezone>UTC</timezone>
 
 	<inputs>
          <input name="eventData" feed="demoEventData" start="now(0,0)" end="now(0,0)" />

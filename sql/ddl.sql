@@ -1,11 +1,11 @@
 
-create database demomysql;
+CREATE DATABASE IF NOT EXISTS demomysql;
 
 use demomysql;
 
 create table sv_aggregate(
 studyid VARCHAR(255),
-visit VARCHAR(255), 
+visit VARCHAR(255),
 year BIGINT,
 month BIGINT,
 visit_count BIGINT
