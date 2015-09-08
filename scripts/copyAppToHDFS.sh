@@ -14,6 +14,8 @@ echo "Copied UDF jar files to HDFS"
 su - admin -c "hdfs dfs -put /usr/hdp/current/hive-webhcat/share/hcatalog/hive-hcatalog-core.jar /user/admin/data_pipeline_demo/jars/"
 echo "Copied Serde jar files to HDFS"
 su - admin -c "hdfs dfs -put ${project_root}/jars/* /user/admin/data_pipeline_demo/jars/"
+su - admin -c "hdfs dfs -put /usr/hdp/current/atlas-server/hook/hive/*.jar /user/admin/data_pipeline_demo/jars/"
+
 echo "Copied other jar files to HDFS"
 su - admin -c "hdfs dfs -put ${project_root}/falcon/workflow/* /user/admin/data_pipeline_demo/falcon/workflow/"
 echo "Copied Falcon workflow files to HDFS"
