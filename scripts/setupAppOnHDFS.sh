@@ -130,6 +130,7 @@ echo "Setting up flume - Done"
 echo "Starting the Flume Agent - Start"
 cd /var/log/flume
 /usr/hdp/current/flume-server/etc/rc.d/init.d/flume-agent stop
+ps aux|grep ^flume  | awk '{print $2}' | sudo xargs kill
 /usr/hdp/current/flume-server/etc/rc.d/init.d/flume-agent start
 #nohup flume-ng agent -c /etc/flume/conf -f /etc/flume/conf/flume.conf -n sandbox &
 echo ""
