@@ -25,7 +25,7 @@ mysql < ${project_root}/sql/truncatetbl.sql
 echo "Cleaning up mysql table - done"
 
 echo "Cleaning up Flume directory - Start"
-rm -f /root/data_pipeline_demo/input/*
+rm -f /tmp/data_pipeline_demo/input/*
 echo "Cleaning up Flume directory - Done"
 
 else
