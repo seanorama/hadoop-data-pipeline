@@ -2,6 +2,7 @@
 
 echo "Setting up flume - Start"
 mkdir -p /tmp/data_pipeline_demo/input
+chmod 777 /tmp/data_pipeline_demo/input
 
 cp /etc/flume/conf/flume.conf /etc/flume/conf/flume.conf.bak
 cp /app/hadoop-data-pipeline/flume/flume.conf /etc/flume/conf/flume.conf
